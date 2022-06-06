@@ -5,16 +5,16 @@ using UnityEditor;
 using UnityEngine.UI;
 public class CharacterControlKeys : MonoBehaviour
 {
-  private float movementSpeed = 10f;
+  
+    private float movementSpeed = 20f;
     private Rigidbody2D rb;
 
-    public SpriteRenderer character;
-    //public static int selectedSkin = 0;
+    public SpriteRenderer character; 
     public List<Sprite> skins = new List<Sprite>();
     public Animator anim;
     public static int selectedIndex = 0;
 
-    // Start is called before the first frame update
+
 
     private void Start()
     {
@@ -30,27 +30,40 @@ public class CharacterControlKeys : MonoBehaviour
         var movement = Input.GetAxis("Horizontal");
         character.transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * movementSpeed;
 
-        if(Input.GetKeyDown(KeyCode.RightArrow) == true)
+       if(skinManager.selectedSkin == 0)
         {
-            anim.enabled = true;
-            anim.Play("girl_running_right");
-            
+            if (Input.GetKeyDown(KeyCode.RightArrow) == true)
+            {
+                anim.enabled = true;
+                anim.Play("girl_running_right");
+
+            }
+            if (Input.GetKeyDown(KeyCode.LeftArrow) == true)
+            {
+                anim.enabled = true;
+                anim.Play("girl_running_left");
+
+            }
         }
-        if (Input.GetKeyDown(KeyCode.LeftArrow) == true)
+       if(skinManager.selectedSkin == 1)
         {
-            anim.enabled = true;
-            anim.Play("girl_running_left");
-            
+            if (Input.GetKeyDown(KeyCode.RightArrow) == true)
+            {
+                anim.enabled = true;
+                anim.Play("ght_ruuning_right");
+
+            }
+            if (Input.GetKeyDown(KeyCode.LeftArrow) == true)
+            {
+                anim.enabled = true;
+                anim.Play("boy_running_left");
+
+            }
+
         }
 
-        // Rigidbody2D rb = GetComponent<Rigidbody2D>();
-        // if (Input.GetKeyDown(KeyCode.RightArrow))
-        // rb.AddForce(Vector3.right * speed) ;
-        // var move = Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0);
-        //transform.position = transform.position ++;
+        }
 
-        //  gameObject.transform.position.x = gameObject.transform.position + 1;
-        // if (Input.GetKeyDown(KeyCode.LeftArrow))
-        //   rb.AddForce(Vector3.left);
+
     }
-}
+

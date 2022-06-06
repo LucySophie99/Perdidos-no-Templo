@@ -7,7 +7,7 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 0
     path: 
-    guid: 2cda990e2423bbf4892e6590ba056729
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Inicio.unity
     guid: 3b950051b76fc184e99922040938cb78
@@ -15,10 +15,40 @@ EditorBuildSettings:
     path: Assets/Scenes/EscolherPersonagem.unity
     guid: 20e51b521542a81428749166848bd40e
   - enabled: 1
-    path: Assets/Scenes/Nivel4.unity
+    path: Assets/Scenes/Marte.unity
     guid: 4b331eca361f32a4e8b43ae8c842f605
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/Nivel1.unity
-    guid: 007a70aeb7cecac4c9a61ac70d949870
+    path: Assets/Scenes/Mercurio.unity
+    guid: 8a802a4a53c558049a8040de6da6851d
+  - enabled: 1
+    path: Assets/Scenes/Jupiter.unity
+    guid: 514d53847613b6c4aa7feb29455f6cda
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Neptuno.unity
+    guid: cee74faa625e8bf4d9e01725c518deb0
+  - enabled: 1
+    path: Assets/Scenes/Venus.unity
+    guid: 8526458440052814992f3c839c296e09
+  - enabled: 1
+    path: Assets/Scenes/Creditos.unity
+    guid: 1b4b4df9858ce6c46a664a4320ea8e92
+  - enabled: 1
+    path: Assets/Scenes/Emblemas.unity
+    guid: 7ea3ac5201c47e4459bb2fb2d315afcf
+  - enabled: 1
+    path: Assets/Scenes/Fim.unity
+    guid: a6d10d19d4a56904493eca48577c8099
+  - enabled: 1
+    path: Assets/Scenes/Minerva.unity
+    guid: d772ad125540f4d46a617113f42ef004
+  - enabled: 1
+    path: Assets/Scenes/Juno.unity
+    guid: 0b8b9dbed7677494db3ce4d4dce03770
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: dac29e9d3878bb042a0d46c07e2d85d9, type: 2}

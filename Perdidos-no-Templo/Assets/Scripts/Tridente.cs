@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Tridente : MonoBehaviour
 {
-    float moveSpeed = 50f;
+    float moveSpeed = 10f;
     Rigidbody2D rb;
     public Transform target;
     Vector2 moveDirection;

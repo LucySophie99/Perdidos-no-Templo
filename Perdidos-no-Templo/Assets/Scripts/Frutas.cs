@@ -19,7 +19,7 @@ public class Frutas : MonoBehaviour
 
         int randomFruit = Random.Range(0, frutas.Length);
 
-        if (Random.value <= .6f)
+        if (Random.value <= .4f)
         {
             Instantiate(frutas[randomFruit], new Vector2(Random.Range(xBound2, xBound), yBound), Quaternion.identity);
         }

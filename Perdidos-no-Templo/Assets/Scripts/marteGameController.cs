@@ -7,39 +7,23 @@ using UnityEngine.SceneManagement;
 public class marteGameController : MonoBehaviour
 {
 
-    
-    public Text scoreText;
-    public static int score = 0;
+
+
+    //public Text scoreText;
+  //  public static int score = 0;
     public Collider2D relva;
 
 
 
      void Start()
     {
-       
     }
 
     void Update()
     {
-            scoreText = GameObject.Find("scoreText").GetComponent<Text>();
-        
-            scoreText.text = score.ToString();
-         
 
+     
 
-
-        if (healthBar.health >= 100f)
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            PauseGame();
-        }
-
-        if (healthBar.health <= 0f)
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            PauseGame();
-
-        }
     }
 
      void OnTriggerEnter2D(Collider2D target)
@@ -79,7 +63,7 @@ public class marteGameController : MonoBehaviour
     {
         Destroy(this.gameObject);
        
-        Debug.Log(score);
+        //Debug.Log(score);
     }
 
     void PauseGame()
@@ -90,4 +74,5 @@ public class marteGameController : MonoBehaviour
     {
         Time.timeScale = 1;
     }
+  
 }

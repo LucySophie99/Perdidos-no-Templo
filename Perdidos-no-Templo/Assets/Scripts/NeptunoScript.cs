@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class NeptunoScript : MonoBehaviour
 {
@@ -9,6 +10,9 @@ public class NeptunoScript : MonoBehaviour
     GameObject tridente;
     float fireRate;
     float nextFire;
+    public static int numeroTridentes = 1;
+    public Text totalTridentes;
+    static int numeroAtualTridentes = 20;
 
     private void Start()
     {
@@ -18,6 +22,8 @@ public class NeptunoScript : MonoBehaviour
     private void Update()
     {
         CheckTimeOfFite();
+
+       totalTridentes.text = numeroAtualTridentes.ToString();
     }
 
     public void CheckTimeOfFite()
@@ -26,6 +32,9 @@ public class NeptunoScript : MonoBehaviour
         {
             Instantiate(tridente, transform.position, Quaternion.identity); 
             nextFire = Time.time + fireRate;
+
+            numeroTridentes++;
+            numeroAtualTridentes--;
         }
     }
 

@@ -8,6 +8,8 @@ TagManager:
   - fruta
   - relva
   - flecha
+  - PuzzleButton
+  - Jogo
   layers:
   - Default
   - TransparentFX
