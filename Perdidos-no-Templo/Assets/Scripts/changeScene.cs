@@ -17,5 +17,13 @@ public class changeScene : MonoBehaviour
     {
         SceneManager.LoadScene("EscolherPersonagem");
     }
+    public void Scene3()
+    {
+        SceneManager.LoadScene("Nivel1");
+    }
+    public void Scene4()
+    {
+        SceneManager.LoadScene("Nivel4");
+    }
 
 }

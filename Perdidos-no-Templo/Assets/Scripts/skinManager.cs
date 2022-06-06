@@ -3,14 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class skinManager : MonoBehaviour
 {
     public SpriteRenderer character;
     public List<Sprite> skins = new List<Sprite>();
-    private int selectedSkin = 0;
+    public static int selectedSkin = 0;
     public GameObject playerSkin;
-  
+    
+   
     public void NextSkin()
     {
         Debug.Log("clicou");
@@ -21,11 +23,14 @@ public class skinManager : MonoBehaviour
         }
         character.sprite = skins[selectedSkin];
         Debug.Log(selectedSkin + "foi selecionado");
+        
+
     }
 
-    public void SetSelectedSkin()
+    public void PlayGame()
     {
-       // PrefabUtility.SaveAsPrefabAsset(playerSkin, "Assets/Sprites/selectedSkin.prefab");
+        PlayerPrefs.SetInt("selectedSkin", selectedSkin);
+        SceneManager.LoadScene("Nivel4");
         Debug.Log(selectedSkin + "foi selecionado");
     }
 }

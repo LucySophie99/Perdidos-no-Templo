@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
+    path: 
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Inicio.unity
@@ -14,4 +14,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EscolherPersonagem.unity
     guid: 20e51b521542a81428749166848bd40e
-  m_configObjects: {}
+  - enabled: 1
+    path: Assets/Scenes/Nivel4.unity
+    guid: 4b331eca361f32a4e8b43ae8c842f605
+  - enabled: 1
+    path: Assets/Scenes/Nivel1.unity
+    guid: 007a70aeb7cecac4c9a61ac70d949870
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: dac29e9d3878bb042a0d46c07e2d85d9, type: 2}
